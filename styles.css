@@ -1,7 +1,8 @@
 /* styles.css */
 
 body {
-    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    font-family: 'Roboto', sans-serif;
+    /* Use Roboto font */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #f4f4f4;
-    
+
 }
 
 .container {
@@ -25,59 +26,46 @@ body {
     justify-content: center;
     height: 60vh;
 }
-.g-signin2 {
-    display: inline-block;
-    padding: 0.5em 1em;
-    font-size: 16px;
-    font-weight: bold;
-    color: white;
-    background-color: #4285F4; /* Google blue */
-    border-radius: 25px; /* Make it round */
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.g-signin2:hover {
-    background-color: #357AE8; /* Darker blue on hover */
-}
 
 
-h2 {
-    text-align: center;
-    color: #333333;
-    font-size:300%;
-}
 
-input[type="email"],
-input[type="tel"],
-input[type="password"],
-input[type="submit"] {
-    width: calc(100% - 20px);
-    padding: 12px;
-    margin: 10px 0;
-    border: none;
-    border-radius: 25px;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    color: #fff;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
-input[type="submit"] {
-    background-color: #4285f4;
-}
+    h2 {
+        text-align: center;
+        color: #333333;
+        font-size: 300%;
+    }
 
-input[type="submit"]:hover {
-    background-color: #357ae8;
-}
+    input[type="email"],
+    input[type="tel"],
+    input[type="password"],
+    input[type="submit"] {
+        width: calc(100% - 20px);
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        border-radius: 25px;
+        box-sizing: border-box;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
 
-a {
-    color: #4285f4;
-    text-decoration: none;
-}
+    input[type="submit"] {
+        background-color: #4285f4;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    input[type="submit"]:hover {
+        background-color: #357ae8;
+    }
+
+    a {
+        color: #4285f4;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }

@@ -1,42 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up</title>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <meta name="google-signin-client_id" content="YOUR_CLIENT_ID.apps.googleusercontent.com">
 </head>
 <body>
-<div class="container">
-    <h2>Integrity Watch</h2>
-    <h3 style="font-size:140%">Sign in With Google</h3>
-    <div class="g-signin2" data-onsuccess="onSignUpSuccess" data-theme="dark">Sign in with Google</div>
-    <form id="signUpForm" style="display: none;">
-        <input type="email" id="email" placeholder="Enter your Gmail ID" required>
-        <input type="password" id="password" placeholder="Enter a password" required>
-        <input type="submit" value="Sign in with Email">
-    </form>
-    <p>Already have an account? <a href="signin.html">Sign In</a></p>
-</div>
+    <div class="container">
+        <h2>Integrity Watch</h2>
+        <h3 style="font-size:140%">Sign Up With Google</h3>
+        <div class="g-signin2" data-onsuccess="onSignUpSuccess" data-theme="dark" data-width="300" data-height="50" data-longtitle="true">Sign Up with Google</div>
+        <form id=" signUpForm" style="display: none;">
+            <input type="email" id="email" placeholder="Enter your Gmail ID" required>
+            <input type="password" id="password" placeholder="Enter a password" required>
+            <input type="submit" value="Sign in with Email">
+            </form>
+            <p>Already have an account? <a href="signin.html">Sign In</a></p>
+        </div>
 
-<script>
-function onSignUpSuccess(googleUser) {
-    var profile = googleUser.getBasicProfile();
-    var email = profile.getEmail();
-    document.getElementById('email').value = email;
-    document.getElementById('signUpForm').style.display = 'block';
-}
+        <script>
+            function onSignUpSuccess(googleUser) {
+                var profile = googleUser.getBasicProfile();
+                var email = profile.getEmail();
+                document.getElementById('email').value = email;
+                document.getElementById('signUpForm').style.display = 'block';
+            }
 
-document.getElementById('signUpForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    var email = document.getElementById('email').value;
-    var password = document.getElementById('password').value;
-    // You would handle backend operations here to store email and password in the database
-    alert('Signed in successfully with Google. Email: ' + email + ', Password: ' + password);
-});
-</script>
+            document.getElementById('signUpForm').addEventListener('submit', function (event) {
+                event.preventDefault();
+                var email = document.getElementById('email').value;
+                var password = document.getElementById('password').value;
+                // You would handle backend operations here to store email and password in the database
+                alert('Signed in successfully with Google. Email: ' + email + ', Password: ' + password);
+            });
+
+        </script>
 </body>
 </html>
