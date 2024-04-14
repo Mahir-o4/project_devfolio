@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Upload Photos and Videos</h1>
+        <p id="location"></p>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="upload-container">
+                <button id="uploadButton" onclick="toggleOptions()">Upload Media ⬆️</button>
+                <div class="options" id="options">
+                    <button onclick="openFileInput()">Upload File</button>
+                    <button onclick="openCamera()">Take Photo/Video</button>
+                </div>
+                <input type="file" id="fileInput" style="display: none;" accept="image/*, video/*" capture="camera">
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
