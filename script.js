@@ -161,3 +161,24 @@ function stopStream(stream) {
         track.stop();
     });
 }
+/*const MongoClient = require('mongodb').MongoClient;
+
+// Connect to the MongoDB database
+const client = new MongoClient('mongodb+srv://');
+
+// Get the database and collection
+const db = client.db('Honeycomb');
+const collection = db.collection('my_collection');
+
+// Create a document to insert
+const document = {
+  email: read"email",
+  Password: read"password"
+};
+
+// Insert the document into the collection
+collection.insertOne(document, function(err, result) {
+});
+
+// Close the connection to the database
+client.close();*/
